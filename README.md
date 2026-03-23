@@ -1,17 +1,17 @@
 # Web Automation Framework: SauceDemo Authentication Suite 🚀
 
-## 📝 Overview
+##  Overview
 This repository features a professional end-to-end (E2E) automation project for the **SauceDemo** web application. It is built using the **Page Object Model (POM)** architectural pattern to ensure that the test scripts are modular, easy to maintain, and scalable.
 
 As an **Electronics Technician** transitioning into **QA Automation**, I developed this suite by applying the same systematic troubleshooting and logical rigor used in hardware diagnostics to software quality assurance.
 
-## 🛠 Tech Stack
+##  Tech Stack
 * **Language:** Python 3.x
 * **Test Runner:** Pytest
 * **Automation Library:** Playwright (Python)
 * **Design Pattern:** Page Object Model (POM)
 
-## 🏗 Project Structure
+##  Project Structure
 The project is organized to separate the UI logic from the test execution, following industry best practices:
 
     ├── pages/
@@ -21,11 +21,11 @@ The project is organized to separate the UI logic from the test execution, follo
     ├── requirements.txt       # Project dependencies
     └── README.md              # Project documentation
 
-## 🧪 Test Coverage
+##  Test Coverage
 * **Successful Authentication:** Validates that a user can access the inventory dashboard with correct credentials and verifies the final URL redirection.
 * **Login Failure (Negative Testing):** Ensures the system correctly identifies invalid credentials and displays the expected error validation messages.
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the repository
     git clone https://github.com/v0idbrn/saucedemo-automation.git
