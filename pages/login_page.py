@@ -1,20 +1,36 @@
+"""
+Page Object Model: LoginPage
+Description: Encapsulates UI locators and interaction logic for the Authentication module.
+"""
+
 class LoginPage:
     def __init__(self, page):
+        """
+        Initialize the Page Object with Playwright locators.
+        Think of these as the 'test points' or 'pins' of the UI component.
+        """
         self.page = page
         
-        # Definimos los "componentes" (Locators)
+        # UI Element Locators
         self.username_input = page.locator("#user-name")
         self.password_input = page.locator("#password")
         self.login_button = page.locator("#login-button")
-        # Ajuste: Agregamos los corchetes [] para que reconozca el atributo
+        
+        # Error validation component (Attribute-based selector)
         self.error_message = page.locator("[data-test='error']")
 
     def navigate(self):
-        """Va a la URL de la página de login"""
+        """
+        Navigate to the application's primary login endpoint.
+        """
         self.page.goto("https://www.saucedemo.com/")
 
     def login(self, username, password):
-        """Carga los datos y hace clic. El 'workflow' del login."""
+        """
+        Execute the authentication workflow.
+        Input: user credentials.
+        Action: Populate fields and trigger the login event.
+        """
         self.username_input.fill(username)
         self.password_input.fill(password)
         self.login_button.click()
